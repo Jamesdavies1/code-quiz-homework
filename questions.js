@@ -25,7 +25,7 @@ function Decrement() {
         }
 
         if (mins < 0) {
-            alert('time up');
+            alert('time up! How well did you do?');
             minutes.value = 0;
             seconds.value = 0;
         }
