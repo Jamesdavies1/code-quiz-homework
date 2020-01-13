@@ -39,6 +39,66 @@
           D: "July",
         },
         correctAnswer: "D"
+      },
+      {
+        question: "Who is my favourite sportsperson?",
+        answers: {
+          A: "Wayne Rooney",
+          B: "Mo Farah",
+          C: "Andy Murray",
+          D: "Shaun White",
+        },
+        correctAnswer: "D"
+      },
+      {
+        question: "Which is my favourite sport?",
+        answers: {
+          A: "Snowboarding",
+          B: "Tennis",
+          C: "Skiing",
+          D: "Hockey",
+        },
+        correctAnswer: "A"
+      },
+      {
+        question: "What vehicle do I own?",
+        answers: {
+          A: "Car",
+          B: "Motorbike",
+          C: "Scooter",
+          D: "Truck",
+        },
+        correctAnswer: "B"
+      },
+      {
+        question: "Which country do I want to visit?",
+        answers: {
+          A: "Australia",
+          B: "China",
+          C: "Japan",
+          D: "Canada",
+        },
+        correctAnswer: "C"
+      },
+      {
+        question: "What colour are my eyes?",
+        answers: {
+          A: "Green",
+          B: "Hazel",
+          C: "Brown",
+          D: "Blue",
+        },
+        correctAnswer: "A"
+      },
+      {
+        question: "What is my favourite food?",
+        answers: {
+          A: "Spaghetti",
+          B: "Curry",
+          C: "Burritos",
+          D: "Pizza",
+        },
+        correctAnswer: "D"
       }
     ];
   
@@ -96,7 +156,7 @@
           numCorrect++;
   
           // color the answers green
-          answerContainers[questionNumber].style.color = "lightgreen";
+          answerContainers[questionNumber].style.color = "darkgreen";
         } else {
           // if answer is wrong or blank
           // color the answers red
