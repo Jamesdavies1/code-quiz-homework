@@ -1,30 +1,42 @@
 (function() {
     const myQuestions = [
       {
-        question: "Who is the strongest?",
+        question: "What is my dog called?",
         answers: {
-          a: "Superman",
-          b: "The Terminator",
-          c: "Waluigi, obviously"
+          a: "Rio",
+          b: "Lassie",
+          c: "River",
+          d: "Misty",
         },
         correctAnswer: "c"
       },
       {
-        question: "What is the best site ever created?",
+        question: "Where do i live?",
         answers: {
-          a: "SitePoint",
-          b: "Simple Steps Code",
-          c: "Trick question; they're both the best"
+          a: "Cheshire",
+          b: "Manchester",
+          c: "Stoke",
+          d: "Chester",
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "How old am I?",
+        answers: {
+          a: "23",
+          b: "25",
+          c: "27",
+          d: "29",
         },
         correctAnswer: "c"
       },
       {
-        question: "Where is Waldo really?",
+        question: "What month is my birthday in?",
         answers: {
-          a: "Antarctica",
-          b: "Exploring the Pacific Ocean",
-          c: "Sitting in a tree",
-          d: "Minding his own business, so stop asking"
+          a: "August",
+          b: "March",
+          c: "February",
+          d: "July",
         },
         correctAnswer: "d"
       }
@@ -131,6 +143,7 @@
     // display quiz right away
     buildQuiz();
   
+    const homeButton = document.getElementById("home");
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");

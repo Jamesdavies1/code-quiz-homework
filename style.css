@@ -29,6 +29,7 @@ h1{
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
+  margin-top: 20px;
 }
 .answers label{
   display: block;
@@ -44,8 +45,6 @@ button{
     padding: 20px;
     cursor: pointer;
     margin-bottom: 20px;
-    margin-top: 200px;
-
 }
 button:hover{
     background-color: #38a;
@@ -67,17 +66,24 @@ button:hover{
 .quiz-container{
   position: relative;
   height: 200px;
-  margin-top: 40px;
   background-color: lightcyan;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 300px;
-  margin-top: 200px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 550px;
+  margin-top: 30px;
 }
 
-#next{
-    margin-top: 200px;
+#buttons{
+    margin-top: 350px;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#previous, #next, #submit, #home{
+    width: 250px;
 }
 
 footer{
