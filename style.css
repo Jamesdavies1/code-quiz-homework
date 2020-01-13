@@ -3,27 +3,37 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 body{
     font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
-    color: #333;
+    font-family: 'Roboto Mono', monospace;    color: #333;
   font-weight: 300;
   text-align: center;
-  background-color: #f8f6f0;
+  background-color: black;
 }
-h1{
+#quiztitle{
   font-weight: 300;
   margin: 0px;
   padding: 10px;
-  font-size: 20px;
-  background-color: #444;
-  color: #fff;
+  font-size: 30px;
+  font-family: 'Roboto Mono', monospace;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: black;
+  color: white;
 }
 .question{
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: 'Roboto Mono', monospace;    color: #333;
+  
 }
 .answers {
   margin-bottom: 20px;
@@ -38,13 +48,15 @@ h1{
 button{
   font-family: 'Work Sans', sans-serif;
     font-size: 22px;
-    background-color: #279;
-    color: #fff;
-    border: 0px;
+    background-color: black;
+    color: white;
     border-radius: 3px;
-    padding: 20px;
+    padding: 15px;
     cursor: pointer;
     margin-bottom: 20px;
+    border-style: solid;
+    border-color: white;
+    font-family: 'Roboto Mono', monospace;;
 }
 button:hover{
     background-color: #38a;
@@ -66,16 +78,18 @@ button:hover{
 .quiz-container{
   position: relative;
   height: 200px;
-  background-color: lightcyan;
+  background-color: lightsalmon;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   height: 550px;
-  margin-top: 30px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: white;
 }
 
 #buttons{
-    margin-top: 350px;
+    margin-top: 280px;
     float: left;
     width: 80%;
     margin-left: 10%;
@@ -91,24 +105,34 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 10%;
+    height: 5%;
     border-style: solid;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
+    border-color: white;
 }
 
 .footertext{
     text-align: center;
     font-family: 'Geo', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 5px;
+    font-family: 'Roboto Mono', monospace;    color: #333;
+    color: white;
 }
 
 .portfolio{
     text-align: center;
     font-family: 'Geo', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 5px;
+    font-family: 'Roboto Mono', monospace;    color: #333;
+    color: white;
+}
+
+#title{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
 }

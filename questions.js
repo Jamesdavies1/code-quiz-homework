@@ -3,42 +3,42 @@
       {
         question: "What is my dog called?",
         answers: {
-          a: "Rio",
-          b: "Lassie",
-          c: "River",
-          d: "Misty",
+          A: "Rio",
+          B: "Lassie",
+          C: "River",
+          D: "Misty",
         },
-        correctAnswer: "c"
+        correctAnswer: "C"
       },
       {
         question: "Where do i live?",
         answers: {
-          a: "Cheshire",
-          b: "Manchester",
-          c: "Stoke",
-          d: "Chester",
+          A: "Cheshire",
+          B: "Manchester",
+          C: "Stoke",
+          D: "Chester",
         },
-        correctAnswer: "a"
+        correctAnswer: "A"
       },
       {
         question: "How old am I?",
         answers: {
-          a: "23",
-          b: "25",
-          c: "27",
-          d: "29",
+          A: "23",
+          B: "25",
+          C: "27",
+          D: "29",
         },
-        correctAnswer: "c"
+        correctAnswer: "C"
       },
       {
         question: "What month is my birthday in?",
         answers: {
-          a: "August",
-          b: "March",
-          c: "February",
-          d: "July",
+          A: "August",
+          B: "March",
+          C: "February",
+          D: "July",
         },
-        correctAnswer: "d"
+        correctAnswer: "D"
       }
     ];
   
@@ -147,6 +147,7 @@
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
+    const beginQuiz = document.querySelectorAll(".beginquiz");
     let currentSlide = 0;
   
     showSlide(0);
