@@ -1,6 +1,37 @@
 var mins = 2;
 var secs = mins * 60;
 
+let count = 1;
+
+let allPlayers = {};
+function getAllPlayers() {
+
+    $("#highScore").empty();
+    Object.keys(localStorage).forEach(function (key) {
+
+        allPlayers[key] = localStorage.getItem(key);
+    });
+
+    const playerKeys = Object.keys(allPlayers)
+    console.log(playerKeys)
+
+    const playerValues = Object.values(allPlayers)
+    console.log(playerValues)
+
+
+    for (let j = 0; j < playerKeys.length; j++) {
+
+
+
+        $("#highScore").append(`${playerKeys[j]}: ${playerValues[j]}`);
+
+
+    }
+
+
+}
+
+
 function countdown() {
     setTimeout('Decrement()', 60);
 }
@@ -174,9 +205,13 @@ function getseconds() {
         });
 
         quizContainer.innerHTML = output.join("");
+        document.getElementById("quiz").style.display = "block";
+        document.getElementById("buttons").style.display = "block";
+        document.getElementById("results").style.display = "block";
     }
 
     function showResults() {
+
         const answerContainers = quizContainer.querySelectorAll(".answers");
 
         let numCorrect = 0;
@@ -196,6 +231,25 @@ function getseconds() {
         });
 
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
+        let currentPlayer = `player${count}`
+
+
+        localStorage.setItem(currentPlayer, numCorrect);
+
+        count++
+
+        document.getElementById("quiz").style.display = "none";
+        document.getElementById("buttons").style.display = "none";
+        document.getElementById("results").style.display = "none";
+
+
+
+
+
+        getAllPlayers();
+
+        console.log(allPlayers);
     }
 
     function showSlide(n) {
@@ -225,6 +279,8 @@ function getseconds() {
     function showPreviousSlide() {
         showSlide(currentSlide - 1);
     }
+
+
 
     const quizContainer = document.getElementById("quiz");
     const resultsContainer = document.getElementById("results");
