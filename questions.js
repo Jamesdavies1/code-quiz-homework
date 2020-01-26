@@ -23,7 +23,7 @@ function getAllPlayers() {
 
 
 
-        $("#highScore").append(`${playerKeys[j]}: ${playerValues[j]}`);
+        $("#highScore").append(`${playerKeys[j]}  ${playerValues[j]} `);
 
 
     }
