@@ -4,6 +4,8 @@
 
 Here you will find my Coding quiz homework.
 
+This quiz is optimized for mobile use and desktop use.
+
 Upon following the live link down below, you will find my application where you can instantly begin to play my quiz game!
 
 -------------------------------------------
